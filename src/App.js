@@ -11,7 +11,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
 
   const searchChangeHandler = (e) => {
-    if (searchWord.trim().length !== 0) {
+    if (e.target.value[0] !== " ") {
       setSearchWord(e.target.value);
     }
   };
